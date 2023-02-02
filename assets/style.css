@@ -9,10 +9,8 @@
 
  h1{
     font-size: 40px;
-    margin-top: 15px;
-    position: relative;
-    top: 20px;
-    left: 15%;
+    /*margin-top: 15px;*/
+
     display: inline-block;
  }
 
@@ -21,17 +19,25 @@
     font-size: 22px;
  }
 
+ h3{
+   margin: 15px 0px 5px 0;
+ }
+ .nav-padre{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 20px;
+ }
  nav a {
     font-size: 15px;
     background-color:rgb(68 114 196);
-    width: 80px;
+    width: 120px;
     color: white;
     text-align: center;
-    padding: 5px 0px;
-    margin: 0 0.3%;
     position: relative;
-    left: 65%;
-    top: 10px;
+    top: 30px;
+    padding: 5px 0px;
+    margin: 0px 10px 0 10px;
     z-index: 1;
     border: 1px solid black;
     text-decoration: none;
@@ -89,6 +95,10 @@ main{
     font-style: italic;
  }
 
+ .underlined{
+   text-decoration:underline;
+ }
+
  .principal{
     position: absolute;
     left: 30%;
@@ -97,8 +107,29 @@ main{
     padding: 10px;
  }
 
- .principal p{
-    margin-bottom: 20px;
+
+ table{
+   width: 60%;
+   margin: 40px 0;
+   text-align: center;
  }
- 
+
+ ol{
+   list-style-type: lower-alpha;
+   list-style-position: inside;
+ }
+
+ ul{
+   list-style-position:inside;
+   margin: 0;
+ }
+
+
+ dt{
+   margin-top: 15px;
+ }
+
+ dd{
+   margin-bottom: 10px;
+ }
  
