@@ -1,135 +1,288 @@
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
- }
-
-
-
- h1{
-    font-size: 40px;
-    /*margin-top: 15px;*/
-
-    display: inline-block;
- }
-
- h2{
-    text-align: center;
-    font-size: 22px;
- }
-
- h3{
-   margin: 15px 0px 5px 0;
- }
- .nav-padre{
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   margin-top: 20px;
- }
- nav a {
-    font-size: 15px;
-    background-color:rgb(68 114 196);
-    width: 120px;
-    color: white;
-    text-align: center;
-    position: relative;
-    top: 30px;
-    padding: 5px 0px;
-    margin: 0px 10px 0 10px;
-    z-index: 1;
-    border: 1px solid black;
-    text-decoration: none;
-    display: inline-block;
-    box-shadow: 3px 3px rgb(112, 112, 112);
-    
- }
-
- nav a.active{
-    background-color: rgb(112 173 71);
- }
- 
-
- .banner {
-    width: 70%;
-    height: 350px;
-    background-image: url(./banner.jpg);
-    background-size: cover;
-    background-position: 0% 40%;
-    position: relative;
-    left: 15%;
- } 
-
-main{
-    position: relative;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
- .recuadro{
-    width: 70%;
-    height: 35px;
-    border: 2px solid black;
-    position: absolute;
-    left: 15%;
-    display: inline-block;
- }
+/***************  Header   *************/
 
- figure{
-    display: inline-block;
-    background-color: blue;
-     
- }
- .logo{
-    width: 150px;
-    position: absolute;
-    left: 15%;
-    top: 40px;
- }
+.logoheader{
+  width: 150px;
+  display: none;
+}
 
-  article p{
-   display: inline-block;
-   margin-bottom: 20px;
- }
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
- .italic{
-    font-style: italic;
- }
+h1{
+   font-size: 35px;
+}
 
- .underlined{
-   text-decoration:underline;
- }
-
- .principal{
-    position: absolute;
-    left: 30%;
-    top: 55px;
-    width: 55%;
-    padding: 10px;
- }
-
-
- table{
-   width: 60%;
-   margin: 40px 0;
+h2{
    text-align: center;
- }
+   font-size: 22px;
+}
 
- ol{
-   list-style-type: lower-alpha;
-   list-style-position: inside;
- }
+h3{
+  margin: 20px 0px 5px 0;
+}
+.nav-padre{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+nav a {
+   font-size: 14px;
+   background-color:rgb(68 114 196);
+   width: 110px;
+   color: white;
+   text-align: center;
+   position: relative;
+   top: 30px;
+   padding: 5px 0px;
+   margin: 0px 8px 0 8px;
+   z-index: 1;
+   border: 1px solid black;
+   text-decoration: none;
+   display: inline-block;
+   box-shadow: 3px 3px rgb(112, 112, 112);
+}
 
- ul{
-   list-style-position:inside;
-   margin: 0;
- }
+nav a.active{
+   background-color: rgb(112 173 71);
+}
 
 
- dt{
-   margin-top: 15px;
- }
+.banner {
+   width: 1300px;
+   height: 350px;
+   background-image: url(./banner.jpg);
+   background-size: cover;
+   background-position: 0% 40%;
+} 
 
- dd{
-   margin-bottom: 10px;
- }
- 
+.recuadro{
+   width: 1300px;
+   height: 35px;
+   border: 2px solid black;
+}
+
+/************* main *******************/
+
+main{
+  display: flex;
+  justify-content: center;
+
+}
+
+.logo{
+   width: 200px;
+}
+
+ article p{
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.principal{
+  width:1100px;
+  padding: 10px;
+}
+/***************  Schedule   *************/
+
+.padremapas{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.padremapas>div{
+  margin-bottom: 20px;
+}
+
+
+table{
+  width: 60%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+ol{
+  list-style-type: lower-alpha;
+  list-style-position: inside;
+}
+
+ul{
+  list-style-position:inside;
+  margin: 0;
+}
+
+
+dt{
+  margin-top: 15px;
+}
+
+dd{
+  margin-bottom: 10px;
+}
+
+
+/* formulario */
+
+
+
+.inline{
+  display: inline;
+}
+
+.input1 {
+  width: 300px;
+  margin: 15px 20px 15px 0;
+}
+
+input{
+  border: 0;
+  border-bottom:solid 1px black;
+  text-decoration-line: none;
+  outline: none;
+
+}
+
+label{
+  margin-right: 20px;
+}
+
+fieldset{
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boton{
+   display: block;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 15px auto;
+}
+
+.boton:hover{
+  background-color: rgb(184, 184, 184);
+}
+
+
+/***************  clases con caracterisiticas *****************/
+
+.flex{
+  display: flex;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.underlined{
+ text-decoration:underline;
+}
+
+
+/***** responsive ******/
+
+@media only screen and (max-width:1300px) {
+
+
+   nav a {
+     position: relative;
+     top: 10px;
+  }
+
+  .banner {
+     width: 95vw;
+     height: 30vh;
+     background-position: 0% 30%;
+  } 
+
+  .recuadro{
+     width: 95vw;
+     height: 32px;
+     border: 2px solid black;
+  }
+
+  h2{
+     text-align: center;
+     font-size: 18px;
+  }
+
+  .principal{
+     width:70vw;
+      padding: 10px;
+   }
+
+   .logo{
+     width: 25vw;
+  }
+}
+
+
+@media only screen and (max-width:780px) {
+
+  h1{
+     font-size: 25px;
+     margin-top: 0;
+  }
+
+  nav{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+  }
+
+  nav a {
+     font-size: 12px;
+     width: 100px;
+     padding: 5px 0px;
+     margin: 8px 8px 0 8px;
+
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .principal{
+     width:99vw;
+   }
+
+   .banner {
+     width: 100vw;
+     height: 30vh;
+
+  } 
+
+  .recuadro{
+     width: 100vw;
+     height: 32px;
+  }
+
+  .nav-padre{
+     margin-top: 0;
+   }
+
+   .logoheader{
+     display:block;
+   }
+
+}
+
+
+
